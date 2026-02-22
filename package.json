@@ -1,0 +1,43 @@
+{
+  "name": "putput-cli",
+  "version": "0.0.1",
+  "description": "Upload files from the terminal. Get a CDN URL back. No signup required.",
+  "type": "module",
+  "bin": {
+    "putput": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [
+    "putput",
+    "putput.io",
+    "file-upload",
+    "cli",
+    "upload",
+    "cdn",
+    "cloudflare",
+    "r2"
+  ],
+  "homepage": "https://putput.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/putput-io/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/putput-io/cli/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@putput/tsconfig": "workspace:*",
+    "@types/node": "^25.3.0",
+    "typescript": "^5.5"
+  }
+}
